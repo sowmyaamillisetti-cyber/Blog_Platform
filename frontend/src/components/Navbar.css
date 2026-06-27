@@ -1,0 +1,86 @@
+nav{
+    position: sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    
+    padding:12px 35px;
+
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(10px);
+    box-shadow:0 4px 20px rgba(0,0,0,.15);
+
+    animation:fadeUp .7s ease;
+}
+
+.logo{
+    /* Reduced from 28px */
+    font-size:22px;
+    font-weight:bold;
+    color:#4f46e5;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+
+    /* Reduced from 25px */
+    gap:18px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+
+    /* Reduced from 17px */
+    font-size:20px;
+
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#60a5fa;
+    transform:translateY(-2px);
+}
+
+.logout-btn,
+.theme-btn{
+    border:none;
+
+    /* Reduced button size */
+    padding:8px 14px;
+
+    border-radius:8px;
+    cursor:pointer;
+
+    /* Reduced font */
+    font-size:14px;
+
+    font-weight:600;
+    transition:.3s;
+}
+
+.logout-btn{
+    background:#ef4444;
+    color:white;
+}
+
+.logout-btn:hover{
+    background:#dc2626;
+    transform:scale(1.05);
+}
+
+.theme-btn{
+    background:#2563eb;
+    color:white;
+}
+
+.theme-btn:hover{
+    background:#86a0e8;
+    transform:scale(1.05);
+}
